@@ -13,18 +13,16 @@ class _ImageViewPageState extends State<ImageViewPage> {
   HomeProvider? homeProviderfalse, homeProvidertrue;
   int a = 0;
 
-
   @override
   Widget build(BuildContext context) {
     homeProvidertrue = Provider.of<HomeProvider>(context, listen: true);
     homeProviderfalse = Provider.of<HomeProvider>(context, listen: false);
-
-    // homeProvidertrue!.indexnumber(pageController.initialPage);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.purple,
-          title: Text("${homeProvidertrue!.number + 1} / 50"),
+          title: Text(
+              "${homeProvidertrue!.number + 1} / ${homeProviderfalse!.image.length}"),
         ),
         body: PageView.builder(
           scrollDirection: Axis.horizontal,

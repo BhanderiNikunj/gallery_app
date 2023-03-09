@@ -56,8 +56,54 @@ class HomeProvider extends ChangeNotifier {
     "Assets/Images/GellaryImage/48.png",
     "Assets/Images/GellaryImage/49.png",
     "Assets/Images/GellaryImage/50.png",
+    "Assets/Images/GellaryImage/51.png",
+    "Assets/Images/GellaryImage/52.png",
+    "Assets/Images/GellaryImage/53.png",
+    "Assets/Images/GellaryImage/54.png",
+    "Assets/Images/GellaryImage/55.png",
+    "Assets/Images/GellaryImage/56.png",
+    "Assets/Images/GellaryImage/57.png",
+    "Assets/Images/GellaryImage/58.png",
+    "Assets/Images/GellaryImage/59.png",
+    "Assets/Images/GellaryImage/60.png",
+    "Assets/Images/GellaryImage/61.png",
+    "Assets/Images/GellaryImage/62.png",
+    "Assets/Images/GellaryImage/63.png",
+    "Assets/Images/GellaryImage/64.png",
+    "Assets/Images/GellaryImage/65.png",
+    "Assets/Images/GellaryImage/66.png",
+    "Assets/Images/GellaryImage/67.png",
+    "Assets/Images/GellaryImage/68.png",
+    "Assets/Images/GellaryImage/69.png",
+    "Assets/Images/GellaryImage/70.png",
+    "Assets/Images/GellaryImage/71.png",
+    "Assets/Images/GellaryImage/72.png",
+    "Assets/Images/GellaryImage/73.png",
   ];
   List Date = [
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
+    "28/06/2021",
     "28/06/2021",
     "28/06/2021",
     "28/06/2021",
@@ -160,6 +206,30 @@ class HomeProvider extends ChangeNotifier {
     "Khoobaurat",
     "the zoya factor",
     "cocktail",
+    "love ajj kal",
+    "sonu ke titu ki sweety",
+    "tere naam",
+    "the sky is pink",
+    "the ghost",
+    "ashton kutcher",
+    "humpty sharma",
+    "Khoobaurat",
+    "the zoya factor",
+    "cocktail",
+    "love ajj kal",
+    "sonu ke titu ki sweety",
+    "tere naam",
+    "the sky is pink",
+    "the ghost",
+    "ashton kutcher",
+    "humpty sharma",
+    "humpty sharma",
+    "Khoobaurat",
+    "Khoobaurat",
+    "the zoya factor",
+    "the zoya factor",
+    "the zoya factor",
+    "cocktail",
   ];
   List Screens = [
     Images(),
@@ -167,10 +237,10 @@ class HomeProvider extends ChangeNotifier {
     ProfilePage(),
   ];
 
-  int selectedIndex=0;
-  void changeIndex()
-  {
-    number =selectedIndex;
+  int selectedIndex = 0;
+
+  void changeIndex() {
+    number = selectedIndex;
   }
 
   void update(int value) {

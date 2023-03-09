@@ -11,22 +11,34 @@ class ImageViewPage extends StatefulWidget {
 
 class _ImageViewPageState extends State<ImageViewPage> {
   HomeProvider? homeProviderfalse, homeProvidertrue;
+  int a = 0;
+
 
   @override
   Widget build(BuildContext context) {
     homeProvidertrue = Provider.of<HomeProvider>(context, listen: true);
     homeProviderfalse = Provider.of<HomeProvider>(context, listen: false);
+
+    // homeProvidertrue!.indexnumber(pageController.initialPage);
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.purple,
+          title: Text("${homeProvidertrue!.number + 1} / 50"),
+        ),
         body: PageView.builder(
+          scrollDirection: Axis.horizontal,
           itemCount: homeProviderfalse!.image.length,
+          controller: PageController(initialPage: homeProviderfalse!.number),
           itemBuilder: (context, index) {
             return Container(
               height: 50,
               width: 50,
-              color: Colors.purple,
               child: Image.asset("${homeProviderfalse!.image[index]}"),
             );
+          },
+          onPageChanged: (index) {
+            homeProviderfalse!.numberOfPage(index);
           },
         ),
       ),

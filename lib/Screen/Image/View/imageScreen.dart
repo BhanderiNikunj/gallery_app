@@ -33,9 +33,14 @@ class _ImagesState extends State<Images> {
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
                 onTap: () {
+
+                  homeProviderfalse!.selectedIndex =index;
+                  homeProviderfalse!.changeIndex();
+
                   Navigator.pushNamed(
                     context,
                     'imageview',
+                    arguments: index,
                   );
                 },
                 child: Container(

@@ -4,7 +4,7 @@ import 'package:gallery_app/Screen/Profile/View/ProfilePage.dart';
 import 'package:gallery_app/Screen/Video/View/VideoScreen.dart';
 
 class HomeProvider extends ChangeNotifier {
-  int i = 0;
+  int i = 0, number = 0;
   List image = [
     "Assets/Images/GellaryImage/1.png",
     "Assets/Images/GellaryImage/2.png",
@@ -167,8 +167,19 @@ class HomeProvider extends ChangeNotifier {
     ProfilePage(),
   ];
 
+  int selectedIndex=0;
+  void changeIndex()
+  {
+    number =selectedIndex;
+  }
+
   void update(int value) {
     i = value;
+    notifyListeners();
+  }
+
+  void numberOfPage(int index) {
+    number = index;
     notifyListeners();
   }
 }
